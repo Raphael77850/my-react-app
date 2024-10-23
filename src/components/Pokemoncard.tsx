@@ -1,8 +1,10 @@
+interface Pokemon {
+  name: string;
+  imgSrc?: string;
+}
+
 interface PokemonCardProps {
-  pokemon: {
-    name: string;
-    imgSrc?: string;
-  };
+  pokemon: Pokemon;
 };
 
 const PokemonCard = ({ pokemon } : PokemonCardProps) => {
