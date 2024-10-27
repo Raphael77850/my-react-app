@@ -7,6 +7,7 @@ interface PokemonCardProps {
   pokemon: Pokemon;
 };
 
+
 const PokemonCard = ({ pokemon } : PokemonCardProps) => {
   return (
     <figure>
