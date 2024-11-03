@@ -1,4 +1,3 @@
-import { useState } from "react";
 import PokemonCard from './PokemonCard';
 
 interface Pokemon {
@@ -15,11 +14,21 @@ interface NavBarProps {
 function NavBar({ pokemonIndex, setPokemonIndex, pokemonList}: NavBarProps) {
 
   const handleNextPokemon = () => {
-    setPokemonIndex(pokemonIndex + 1);
+    const newIndex = pokemonIndex + 1;
+    setPokemonIndex(newIndex);
+    
+    if (pokemonList[newIndex]?.name.toLowerCase() === 'pikachu') {
+      alert("pika pikachu !!!");
+    }
   };
 
   const handlePreviousPokemon = () => {
-    setPokemonIndex(pokemonIndex - 1);
+    const newIndex = pokemonIndex - 1;
+    setPokemonIndex(newIndex);
+        
+    if (pokemonList[newIndex]?.name.toLowerCase() === 'pikachu') {
+      alert("pika pikachu !!!");
+    }
   };
       
 return(

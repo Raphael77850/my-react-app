@@ -1,3 +1,5 @@
+
+
 interface Pokemon {
   name: string;
   imgSrc?: string;
@@ -10,7 +12,7 @@ interface PokemonCardProps {
 
 const PokemonCard = ({ pokemon } : PokemonCardProps) => {
   return (
-    <figure>
+    <figure className="card" style={{backgroundColor: pokemon.color }}>
       {pokemon.imgSrc ? (
         <img src={pokemon.imgSrc} alt={pokemon.name} />
       ) : (
