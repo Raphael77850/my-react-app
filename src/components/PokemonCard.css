@@ -1,0 +1,23 @@
+/* PokemonCard.css */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: lightgreen;
+}
+
+.card-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+figcaption {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
